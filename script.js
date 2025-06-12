@@ -47,11 +47,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- RENDERIZADO DE LA UI ---
     const filtersContainer = document.getElementById('filters-container');
     
-
-    function renderFiltersAndForm() {
+    function renderFiltersAndForm() { // Renombrada para mayor claridad, aunque se mantiene en la lógica
         filtersContainer.innerHTML = '';
         
-
         for (const category in filterConfig) {
             const options = filterConfig[category];
             const key = category.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""); // Normaliza el nombre de la categoría
@@ -71,8 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
             });
             filtersContainer.appendChild(filterGroup);
-
-           
         }
     }
 
@@ -279,9 +275,6 @@ document.addEventListener('DOMContentLoaded', () => {
         infoCard.style.display = 'none';
     }
 
-
-    // --- LÓGICA DEL FORMULARIO CRUD ---
-    // Removed all CRUD related functions and event listeners
 
     // --- INICIALIZACIÓN Y EVENT LISTENERS ---
     loadData();
