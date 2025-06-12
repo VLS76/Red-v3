@@ -50,10 +50,9 @@ h2, h3 {
 }
 
 .filter-group[data-category="Especie"] { border-color: #2a9d8f; }
-.filter-group[data-category="Dispositivos"] { border-color: #e9c46a; }
-.filter-group[data-category="Estudio"] { border-color: #f4a261; }
-.filter-group[data-category="Proyectos"] { border-color: #e76f51; }
-.filter-group[data-category="Status"] { border-color: #264653; }
+.filter-group[data-category="Tecnología"] { border-color: #e9c46a; } /* Updated */
+.filter-group[data-category="Lineas"] { border-color: #f4a261; } /* Updated */
+.filter-group[data-category="Rol"] { border-color: #e76f51; } /* Updated */
 .filter-group[data-category="Institución"] { border-color: #8e7dbe; }
 
 .filter-options {
@@ -110,14 +109,4 @@ h2, h3 {
     color: #888;
 }
 
-/* Panel CRUD (Derecha) */
-
-
-#create-btn { background-color: #28a745; }
-#create-btn:hover { background-color: #218838; }
-#update-btn { background-color: #007bff; }
-#update-btn:hover { background-color: #0069d9; }
-#delete-btn { background-color: #dc3545; }
-#delete-btn:hover { background-color: #c82333; }
-#clear-form-btn { background-color: #6c757d; }
-#clear-form-btn:hover { background-color: #5a6268; }
+/* Panel CRUD (Derecha) - REMOVED */
