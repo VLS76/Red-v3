@@ -284,7 +284,8 @@ function buildNetworkData(filteredPeople) {
         const b = new Set(p2[field.name] || []);
         const overlap = [...a].filter(x => b.has(x));
         if (overlap.length > 0) {
-          shared.push(`${field.name}: ${overlap.join(', ')}`);
+          //shared.push(`${field.name}: ${overlap.join(', ')}`);
+          shared.push(`${overlap.join(', ')}`);
         }
       });
       if (shared.length > 0) {
