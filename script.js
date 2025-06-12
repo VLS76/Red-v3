@@ -331,9 +331,9 @@ function updateNetwork() {
     physics: {
       enabled: true,
       barnesHut: {
-        gravitationalConstant: -4000,
+        gravitationalConstant: -8000,
         centralGravity: 0.3,
-        springLength: 120,
+        springLength: 180,
         springConstant: 0.05,
         damping: 0.09
       }
